@@ -22,7 +22,17 @@
     grid-template-columns: repeat(6,1fr);
 }
 
-.game-screen
+.grid-col-1
+{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-item-col2-span-4
+{
+    grid-column: 2/span 4;
+}
+
+.game-screen-main
 {
     height: 100vh;
     background-color: bisque;
@@ -44,9 +54,36 @@
     justify-self: center;
 }
 
-.left-panel
+.game-screen-left
 {
     background-color: var(--primary-btn-text-color);
+}
+
+.game-screen-middle
+{
+    background-color: bisque
+}
+
+.game-screen-right
+{
+    background-color: var(--primary-btn-text-color);
+    height: 100vh;
+    text-align: center;
+}
+
+.game-screen-right div
+{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.game-counter
+{
+    background-color: var(--primary-btn-bg-color);
+    color: var(--primary-btn-text-color);
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
 }
 
 .bank
